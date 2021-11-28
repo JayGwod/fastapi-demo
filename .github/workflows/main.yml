@@ -50,8 +50,7 @@ jobs:
         # because GitHub actions doesn't perserve the environment
         run: . venv/bin/activate && pytest
       - name: Create archive of dependencies
-        run: |
-          cd ./venv/lib/python3.7/site-packages && zip -r9 ../../../../api.zip .
+        run: cd ./venv/lib/python3.7/site-packages && zip -r9 ../../../../api.zip .
       - name: Add API files to Zip file
         run: cd ./api && zip -g ../api.zip -r .
       - name: Upload zip file artifact
