@@ -1,7 +1,7 @@
 # Tutorial
 
 ```shell
-pip install fastapi uvicorn[standard] strawberry-graphql[fastapi] alembic psycopg2 black python-dotenv bcrypt PyJWT celery redis flower pytest requests mangum
+pip install fastapi uvicorn[standard] strawberry-graphql[fastapi] alembic psycopg2-binary black python-dotenv bcrypt PyJWT celery redis flower pytest requests mangum
 
 alembic init alembic
 
